@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "527572883935",
+    "firebase_url": "https://flash-chat-5fc02.firebaseio.com",
+    "project_id": "flash-chat-5fc02",
+    "storage_bucket": "flash-chat-5fc02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527572883935:android:5714860ffcaf2fbc5a4c6a",
+        "android_client_info": {
+          "package_name": "com.tdarmo.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527572883935-ta87hjl0l64sq16004k1ruvssog7nn99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrMkwSsW-vEaq8QVddg5pIvZ47Q8cV7ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527572883935-ta87hjl0l64sq16004k1ruvssog7nn99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
