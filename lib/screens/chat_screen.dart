@@ -65,17 +65,23 @@ class _ChatScreenState extends State<ChatScreen> {
                   );
                 }
                 final messages = snapshot.data.docs;
-                List<Text> messageWidgets = [];
+                List<MessageBubble> messageBubbles = [];
                 for (var message in messages) {
                   final messageText = message.data()['text'];
                   final messageSender = message.data()['sender'];
 
-                  final messageWidget =
-                      Text('$messageText from $messageSender');
-                  messageWidgets.add(messageWidget);
+                  final messageBubble = MessageBubble(
+                    sender: messageSender,
+                    text: messageText,
+                  );
+
+                  messageBubbles.add(messageBubble);
                 }
-                return Column(
-                  children: messageWidgets,
+
+                return Expanded(
+                  child: ListView(
+                    children: messageBubbles,
+                  ),
                 );
               },
             ),
@@ -109,6 +115,46 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class MessageBubble extends StatelessWidget {
+  MessageBubble({this.text, this.sender});
+
+  final String text;
+  final String sender;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(10.0),
+      child: Column(
+        children: [
+          Text(
+            sender,
+            style: TextStyle(
+              color: Colors.black54,
+              fontSize: 12.0,
+            ),
+          ),
+          Material(
+            borderRadius: BorderRadius.circular(30.0),
+            elevation: 5.0,
+            color: Colors.lightBlueAccent,
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
+              child: Text(
+                text,
+                style: TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
