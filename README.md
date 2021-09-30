@@ -1,4 +1,4 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
+<!-- ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 
 # Flash Chat ⚡️
@@ -30,3 +30,35 @@ We’re going to build a modern messaging app where users can sign up and log in
 >This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
 ![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+ -->
+ 
+# Flash Chat ⚡️
+
+## Main Goal
+
+Learn how to incorporate Firebase into a Flutter apps. I use Firebase Cloud Firestore as well as the Firebase authentication package to equip this app with a cloud-based NoSQL database and secure authentication methods.
+
+## Pre-Requisite to Run The Program
+
+- Have Flutter installed (for installation guidance go check [this link](https://flutter.dev/docs/get-started/install))
+- Have an Android / iOS emulator installed (or you can simply plug your own device to your computer)
+
+## How to Build The Program
+
+- Open your terminal
+- Change the working directory into the current project directory
+- Execute `flutter build apk` in your terminal
+
+## How to Run The Program
+
+- Open your terminal
+- Change the working directory into the current project directory
+- Execute `flutter run` in your terminal
+
+## How to Run The Tests
+
+No test has been written yet for this app
+
+## App Preview
+
+![Finished App](https://github.com/londonappbrewery/Images/blob/master/flash_chat_flutter_demo.gif)
